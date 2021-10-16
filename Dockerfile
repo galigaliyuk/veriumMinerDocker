@@ -18,9 +18,9 @@ zlib1g-dev \
 g++ 
 
 #Clone veriuminerRepo
-RUN git clone https://github.com/effectsToCause/veriumMiner
+RUN git clone https://github.com/fireworm71/veriumMiner
 
 #BUILD IT!
-RUN cd veriumMiner  && ./build.sh
+RUN cd veriumMiner && chmod +x *.sh && ./build.sh && chmod +x cpuminer
 ENTRYPOINT  ["/veriumMiner/cpuminer"] 
 
