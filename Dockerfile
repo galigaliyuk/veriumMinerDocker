@@ -11,6 +11,8 @@ git \
 autoconf \
 libssl-dev \
 automake \
+autotools-dev \
+build-essential \
 ca-certificates \
 pkg-config \
 libgmp-dev \
